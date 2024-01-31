@@ -1,0 +1,148 @@
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/rect_border_bg">
+
+        <TextView
+            android:id="@+id/start_node"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            style="@style/textViewStyle"
+            android:text="@string/start_node_text"
+            app:drawableStartCompat="@drawable/angle_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/end_node"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/end_node"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            style="@style/textViewStyle"
+            app:drawableStartCompat="@drawable/end_node"
+            android:text="@string/end_node_text"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/wall_node"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/start_node"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/wall_node"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            style="@style/textViewStyle"
+            app:drawableStartCompat="@drawable/wall_node"
+            android:text="@string/wall_node_text"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/weight_node"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/end_node"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/weight_node"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            style="@style/textViewStyle"
+            app:drawableStartCompat="@drawable/weight1_node"
+            android:text="@string/weight_node_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_line"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/wall_node"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <View
+            android:id="@+id/vertical_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/orange"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/visited_node"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/weight_node"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </View>
+
+        <TextView
+            android:id="@+id/visited_node"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            style="@style/textViewStyle"
+            app:drawableStartCompat="@drawable/visited_node"
+            android:text="@string/visited_node_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/unvisited_node"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/weight_node"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/unvisited_node"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            style="@style/textViewStyle"
+            app:drawableStartCompat="@drawable/unvisited_node"
+            android:text="@string/unvisited_node_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/current_node"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/visited_node"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/current_node"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            style="@style/textViewStyle"
+            app:drawableStartCompat="@drawable/current_node"
+            android:text="@string/current_node_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/path_node"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/unvisited_node"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/path_node"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            style="@style/textViewStyle"
+            android:text="@string/path_node_text"
+            app:drawableStartCompat="@drawable/path_node"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/current_node"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

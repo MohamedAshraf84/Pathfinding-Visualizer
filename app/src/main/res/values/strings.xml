@@ -1,0 +1,45 @@
+<resources>
+
+    <string name="app_name">Pathfinding Visualizer</string>
+
+    <string name="visualize_btn_text">Visualize</string>
+    <string name="clear_path_btn_text">Clear Path</string>
+    <string name="clear_all_btn_text">Clear All</string>
+
+    <string name="start_node_text">Start Node</string>
+    <string name="end_node_text">End Node</string>
+    <string name="wall_node_text">Wall Node</string>
+    <string name="visited_node_text">Visited Node</string>
+    <string name="weight_node_text">Weight Node</string>
+    <string name="unvisited_node_text">Unvisited Node</string>
+    <string name="current_node_text">Current Node</string>
+    <string name="path_node_text">Path Node</string>
+
+    <string name="bfs">BFS</string>
+    <string name="dfs">DFS</string>
+    <string name="greedy_bfs">Greedy Best-First</string>
+    <string name="a_star">A*</string>
+    <string name="dijkstra">Dijkstra</string>
+
+
+    <string name="node_size_text">Node Size</string>
+    <string name="text_animation_speed">Delay</string>
+    <string name="text_initial_speed">3 ms</string>
+
+    <string-array name="mazes_choices">
+        <item>Mazes</item>
+        <item>Basic Random</item>
+        <item>Recursive Back-Tracker</item>
+        <item>Prim\'s Algorithm</item>
+    </string-array>
+
+    <string-array name="algorithms_choices">
+        <item>Algorithms</item>
+        <item>Depth First Search</item>
+        <item>Breadth First Search</item>
+        <item>Greedy Best-First Search</item>
+        <item>Dijkstra</item>
+        <item>A* [Manhattan Distance]</item>
+    </string-array>
+
+</resources>
