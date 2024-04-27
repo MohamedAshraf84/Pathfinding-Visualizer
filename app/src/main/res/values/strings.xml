@@ -23,7 +23,7 @@
 
 
     <string name="node_size_text">Node Size</string>
-    <string name="text_animation_speed">Delay</string>
+    <string name="text_animation_speed">Animation Speed</string>
     <string name="text_initial_speed">3 ms</string>
 
     <string-array name="mazes_choices">
