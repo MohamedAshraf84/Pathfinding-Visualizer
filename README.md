@@ -34,6 +34,21 @@ An Android application designed to visualize different graph algorithms and maze
     - Resize the grid size.
     - Adjust the visualization speed.
 
+## Screenshots:
+<div align="center">
+  <img src="https://github.com/MohamedAshraf84/Pathfinding-Visualizer/blob/main/Screenshots/1.png">
+  <img src="https://github.com/MohamedAshraf84/Pathfinding-Visualizer/blob/main/Screenshots/2.png">
+  <img src="https://github.com/MohamedAshraf84/Pathfinding-Visualizer/blob/main/Screenshots/3.png">
+  <img src="https://github.com/MohamedAshraf84/Pathfinding-Visualizer/blob/main/Screenshots/4.png">
+  <img src="https://github.com/MohamedAshraf84/Pathfinding-Visualizer/blob/main/Screenshots/5.png">
+  <img src="https://github.com/MohamedAshraf84/Pathfinding-Visualizer/blob/main/Screenshots/6.png">
+  <img src="https://github.com/MohamedAshraf84/Pathfinding-Visualizer/blob/main/Screenshots/7.png">
+  <img src="https://github.com/MohamedAshraf84/Pathfinding-Visualizer/blob/main/Screenshots/8.png">
+</div>
+
+## Demonstration
+https://github.com/MohamedAshraf84/Pathfinding-Visualizer/assets/65142746/41f5081c-88a5-4e6f-817b-aceb575e85b3
+
 ### Future updates
 * Updating Path in Real Time: implement functionality to update the path dynamically when the user moves the start or end node to another location on the grid.
 * Adding more algorithms: expand the selection of algorithms available for visualization. Introduce additional graph algorithms and maze generation algorithms.
